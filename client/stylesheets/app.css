@@ -16,3 +16,7 @@ body{
 .sk-spinner-rotating-plane.sk-spinner {
   background-color: #fff;
 }
+
+.post{
+	margin: solid 1px #eee;
+}
