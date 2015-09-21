@@ -1,0 +1,16 @@
+<template name="homePostData">
+
+	{{#each curUser}}
+		<h2>{{title}}</h2>
+		<h4>{{description}}</h4>
+	
+	{{#if currentUser}}
+		{{username}}
+			{{> deleteFunc}}
+	{{/if}}
+{{/each}}
+</template>
+
+<template name="deleteFunc">
+	<button class="delete">Delete</button>
+</template>
