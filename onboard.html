@@ -3,12 +3,37 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  	<div class="container">
+  		<div class="col-md-12">
+  			<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Onboard</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Admin Login</a></li>
+            <li><a href="#">Get Started</a></li>
 
-  {{> hello}}
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {{> loginButtons}} <!-- here -->
+        </ul>
+    </div>
+</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-9">
+  				<h4>Title of the year</h4>
+  				<p>content of the year</p>
+  			</div>
+  		</div>
+	</div>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
